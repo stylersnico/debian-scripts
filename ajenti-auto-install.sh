@@ -17,7 +17,10 @@ sleep 2 ; apt-get update && apt-get upgrade -y
 sleep 4
 clear
 echo ":: Install Ajenti"
-sleep 2 ; wget -O- https://raw.github.com/Eugeny/ajenti/master/scripts/install-ubuntu.sh | sudo sh
+sleep 2 ; wget http://repo.ajenti.org/debian/key -O- | apt-key add -
+echo "deb http://repo.ajenti.org/debian main main ubuntu" >> /etc/apt/sources.list.d/ajenti.list
+apt-get update
+apt-get install -y ajenti
 
 sleep 4
 clear

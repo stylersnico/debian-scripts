@@ -23,8 +23,9 @@ sleep 2 ; rm /var/log/mysql.err
 sleep 4
 clear
 echo ":: Launch debug mode"
-sleep 2 ; mysqld_safe --log-error=/var/log/mysql.err
-
+sleep 2 ; mysqld_safe --log-error=/var/log/mysql.err &
+sleep 4
+service mysql stop
 sleep 4
 clear
 echo ":: Show error"

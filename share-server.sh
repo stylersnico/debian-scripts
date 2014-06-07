@@ -25,5 +25,4 @@ apt-get update
 apt-get install -y ajenti
 sleep 4
 clear
-echo ":: Show error"
 sleep 2 ; echo ":: Follow the end of the tutorial : http://wp.me/p2RtI7-Hz"

@@ -24,9 +24,9 @@ sleep 4
 clear
 echo ":: Launch debug mode"
 sleep 2 ; mysqld_safe --log-error=/var/log/mysql.err &
-sleep 10 ; echo ":: Waiting for the process"
-sleep 2 ;service mysql stop
+sleep 1 ; echo ":: Waiting 10 seconds for the process"
+sleep 10 ;service mysql stop
 sleep 4
 clear
 echo ":: Show error"
-sleep 2 ; cat /var/log/mysql.err
+sleep 3 ; cat /var/log/mysql.err

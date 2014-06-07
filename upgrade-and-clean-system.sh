@@ -17,17 +17,17 @@ sleep 2 ; apt-get update
 sleep 4
 clear
 echo ":: Upgrade the system"
-sleep 2 ; apt-get upgrade
+sleep 2 ; apt-get upgrade -y
 
 sleep 4
 clear
 echo ":: Use autoremove"
-sleep 2 ; apt-get autoremove
+sleep 2 ; apt-get autoremove -y
 
 sleep 4
 clear
 echo ":: Clean the packages"
-sleep 2 ; apt-get clean
+sleep 2 ; apt-get clean -y
 
 sleep 4
 clear

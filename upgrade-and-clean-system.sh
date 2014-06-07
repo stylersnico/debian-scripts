@@ -3,6 +3,7 @@
 #The Abyss Project -> http://www.abyssproject.net/
 #Compatiblity : Debian 6 + | Ubuntu 12.x + | Debian based distro
 #Use at your own risk !
+# in root terminal : wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/upgrade-and-clean-system.sh | sh
 
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2

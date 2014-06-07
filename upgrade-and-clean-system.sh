@@ -9,17 +9,19 @@ if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2
    exit 1
 fi
+clear
+echo -e '\033[5;31;40:: Update the system\033[0m'
+sleep 2 ; apt-get update
 
-echo ':: Update the system'
-apt-get update
+echo -e '\033[5;31;40:: Upgrade the system\033[0m'
+sleep 2 ; apt-get upgrade
 
-echo ':: Upgrade the system'
-apt-get upgrade
+echo -e '\033[5;31;40:: Use autoremove\033[0m'
+sleep 2 ; apt-get autoremove
 
-echo ':: Use autoremove'
-apt-get autoremove
+echo -e '\033[5;31;40:: Clean the packages\033[0m'
+sleep 2 ; apt-get clean
 
-echo ':: Clean the packages'
-apt-get clean
-
-echo ':: Done!'
+echo -e '\033[5;31;40:: Done!\033[0m'
+sleep 5
+clear

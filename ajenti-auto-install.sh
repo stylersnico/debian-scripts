@@ -12,7 +12,7 @@ fi
 clear
 sleep 2
 echo  ":: Update and ugrade the system"
-sleep 2 ; apt-get -y update && apt-get -y upgrade
+sleep 2 ; apt-get update && apt-get upgrade -y
 
 sleep 4
 clear
@@ -22,7 +22,7 @@ sleep 2 ; wget -O- https://raw.github.com/Eugeny/ajenti/master/scripts/install-u
 sleep 4
 clear
 echo ":: Install Ajenti V"
-sleep 2 ; apt-get -y install -y ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm
+sleep 2 ; apt-get install -y ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm
 
 sleep 4
 clear

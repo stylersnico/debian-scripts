@@ -1,6 +1,7 @@
 #!/bin/bash
 #By Nicolas Simond -> http://www.nicolas-simond.com/
 #The Abyss Project -> http://www.abyssproject.net/
+#Related topic -> http://wp.me/p2RtI7-G5
 #Compatiblity : Debian 6 + | Ubuntu 12.x + | Debian based distro
 #Use at your own risk !
 # in root terminal : wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/mysql-debug.sh | sh

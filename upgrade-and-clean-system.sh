@@ -10,18 +10,18 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 clear
-echo -e '033[5;31;40m:: Update the system\033[0m'
+echo -e '\033[1;31;40m:: Update the system\033[0m'
 sleep 2 ; apt-get update
 
-echo -e '\033[5;31;40m:: Upgrade the system\033[0m'
+echo -e '\033[1;31;40m:: Upgrade the system\033[0m'
 sleep 2 ; apt-get upgrade
 
-echo -e '\033[5;31;40m:: Use autoremove\033[0m'
+echo -e '\033[1;31;40m:: Use autoremove\033[0m'
 sleep 2 ; apt-get autoremove
 
-echo -e '\033[5;31;40m:: Clean the packages\033[0m'
+echo -e '\033[1;31;40m:: Clean the packages\033[0m'
 sleep 2 ; apt-get clean
 
-echo -e '\033[5;31;40m:: Done!\033[0m'
+echo -e '\033[1;31;40m:: Done!\033[0m'
 sleep 5
 clear

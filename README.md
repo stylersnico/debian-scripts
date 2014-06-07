@@ -1,7 +1,7 @@
 debian-scripts
 ==============
 
-Mes scripts personnels pour Debian
+Mes scripts perso pour Debian
 
 Use at your own risk !
 

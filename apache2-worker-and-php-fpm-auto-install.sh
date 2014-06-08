@@ -39,6 +39,6 @@ wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/php5-fp
 sleep 3
 clear
 echo  ":: Done, now restart service and clear the terminal"
-sleep 2 ; service apache2 restart && service php-fpm restart
+sleep 2 ; service apache2 restart && service php5-fpm restart
 sleep 3
 clear

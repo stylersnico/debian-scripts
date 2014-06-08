@@ -24,8 +24,8 @@ deb http://ftp.de.debian.org/debian/ wheezy-updates main contrib non-free
 deb-src http://ftp.de.debian.org/debian/ wheezy-updates main contrib non-free" >> /etc/apt/sources.list
 sleep 3
 clear
-echo  ":: Apache2 mpm worker, PHP5-FPM, FCGI, suExec, Pear, and mcrypt"
-sleep 3 ; apt-get install -y apache2 apache2.2-common apache2-doc apache2-mpm-worker libapache2-mod-fastcgi php5-fpm php-apc apache2-utils libexpat1 ssl-cert php5 php5-common php5-gd php5-mysql php5-imap php5-cli php5-cgi libapache2-mod-fcgid apache2-suexec php-pear php-auth php5-mcrypt mcrypt php5-imagick imagemagick libruby libapache2-mod-ruby libapache2-mod-python php5-curl php5-intl php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+echo  ":: Install Apache2 mpm worker, PHP5-FPM, FCGI, suExec, Pear, and mcrypt"
+sleep 3 ; apt-get update && apt-get upgrade && apt-get install -y apache2 apache2.2-common apache2-doc apache2-mpm-worker libapache2-mod-fastcgi php5-fpm php-apc apache2-utils libexpat1 ssl-cert php5 php5-common php5-gd php5-mysql php5-imap php5-cli php5-cgi libapache2-mod-fcgid apache2-suexec php-pear php-auth php5-mcrypt mcrypt php5-imagick imagemagick libruby libapache2-mod-ruby libapache2-mod-python php5-curl php5-intl php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
 sleep 3
 clear
 echo  ":: Register apache mods"
@@ -34,8 +34,7 @@ a2enmod actions alias fastcgi && a2enmod fcgid && a2enmod suexec rewrite ssl act
 sleep 2
 clear
 echo  ":: Make php5-fpm config file"
-sleep 5 ; cd /etc/apache2/conf.d
-rm php5-fpm.conf
+sleep 5 ; cd /etc/apache2/conf.d/php5-fpm.conf
 wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/php5-fpm.conf
 sleep 3
 clear

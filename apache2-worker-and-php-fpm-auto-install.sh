@@ -3,7 +3,7 @@
 #The Abyss Project -> http://www.abyssproject.net/
 #Compatiblity : Debian 6 + | Ubuntu 12.x + | Debian based distro
 #Use at your own risk !
-# in root terminal : wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/apache2-worker-and-php-fpm-auto-install | sh
+# in root terminal : wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/apache2-worker-and-php-fpm-auto-install.sh | sh
 #Tested on debian 7.5 AMD64
 
 if [ "$(id -u)" != "0" ]; then

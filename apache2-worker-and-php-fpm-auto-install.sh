@@ -34,7 +34,7 @@ a2enmod actions alias fastcgi && a2enmod fcgid && a2enmod suexec rewrite ssl act
 sleep 2
 clear
 echo  ":: Make php5-fpm config file"
-sleep 5 ; cd /etc/apache2/conf.d/php5-fpm.conf
+sleep 5 ; cd /etc/apache2/conf.d
 wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/php5-fpm.conf
 sleep 3
 clear

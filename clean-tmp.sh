@@ -12,9 +12,9 @@ if [ "$(id -u)" != "0" ]; then
 fi
 clear
 echo  ":: Use at your own risk !"
-echo  ":: This script use rm -ri * command !"
+echo  ":: This script use rm -rf * command !"
 echo  ":: Waiting 10 seconds you can use Ctrl+c to cancel !"
 sleep 10
 echo  ":: Clean temp folder"
 sleep 2 ; cd /tmp
-rm -ri *
+rm -rf *

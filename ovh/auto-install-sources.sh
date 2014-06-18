@@ -3,7 +3,7 @@
 #The Abyss Project -> http://www.abyssproject.net/
 #Compatiblity : Debian 7 Wheezy
 #Use at your own risk !
-# in root terminal : wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/auto-install-sources.sh | sh
+# in root terminal : wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/ovh/auto-install-sources.sh | sh
 #Tested on Debian 7.5 AMD64 hosted at OVH -> https://www.ovh.com/
 
 if [ "$(id -u)" != "0" ]; then

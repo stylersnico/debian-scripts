@@ -19,7 +19,7 @@ sleep 4
 clear
 echo  ":: Download new sources list"
 sleep 2 ; cd /etc/apt
-wget -O- https://raw.githubusercontent.com/stylersnico/debian-scripts/master/sources.list
+wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/sources.list
 sleep 3
 clear
 sleep 2

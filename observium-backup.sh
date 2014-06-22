@@ -7,6 +7,8 @@
 #Get the script with : 
 #    cd /usr && wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/observium-backup.sh
 #chmod the script with :  chmod +x /usr/observium-backup.sh
+# create backup dir
+#  mkdir /usr/backup-observium
 #Use crontab to backup every day, per exemple :
 #10 00 * * * root /usr/observium-backup.sh
 
@@ -20,8 +22,7 @@ cd /opt
 # Compress Observium folder
 tar czf observium-backup.tar.gz observium
 
-# create backup dir
-mkdir /usr/backup-observium
+
 
 # move backup to pampa/backup dir
 mv observium-backup.tar.gz /usr/backup-observium

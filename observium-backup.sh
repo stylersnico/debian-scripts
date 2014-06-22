@@ -27,7 +27,7 @@ tar czf observium-backup.tar.gz observium
 # create backup dir
 mkdir /usr/backup-observium
 
-# move backup to pampa/backup dir
+# move backup to /usr/backup-observium dir
 mv observium-backup.tar.gz /usr/backup-observium
 
 # chmod backup folder

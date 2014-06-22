@@ -9,6 +9,7 @@
 #chmod the script with :  chmod +x /usr/observium-backup.sh
 #Use crontab to backup every day, per exemple :
 #10 00 * * * root /usr/observium-backup.sh
+#create the backup dir with : mkdir /usr/backup-observium
 
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2
@@ -24,9 +25,6 @@ cd /opt
 # Compress Observium folder
 tar czf observium-backup.tar.gz observium
 
-# create backup dir
-mkdir /usr/backup-observium
-
 # move backup to /usr/backup-observium dir
 mv observium-backup.tar.gz /usr/backup-observium
 
@@ -40,3 +38,4 @@ cd /opt/observium
 
 #Restart cron
 /etc/init.d/cron start
+

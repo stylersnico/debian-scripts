@@ -73,7 +73,7 @@ add_to_cron()
 	sleep 1
 	service cron restart
 	sleep 1
-	echo "* * * * * root /usr/local/ddos/ddos.sh >> /var/log/deflate.log" >> $CRON
+	echo "* * * * * /usr/local/ddos/ddos.sh >> /var/log/deflate.log" >> $CRON
 	service cron restart
 }
 

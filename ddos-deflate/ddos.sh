@@ -1,5 +1,5 @@
 #
-### -> Config file by Nicolas Simond (http://www.nicolas-simond.com) for Debian 7.5
+### -> Config file by Nicolas Simond (http://www.nicolas-simond.com/project/ddos-deflate-debian-7/) for Debian 7.5
 ### -> View my tutorial for the installation : https://www.abyssproject.net/2014/06/installer-ddos-deflate-debian-7/
 #
 #!/bin/bash

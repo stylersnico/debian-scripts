@@ -73,15 +73,7 @@ add_to_cron()
 	sleep 1
 	service cron restart
 	sleep 1
-	echo "SHELL=/bin/bash" > $CRON
-	if [ $FREQ -le 2 ]; then
-		echo "0-59/$FREQ * * * * root /usr/local/ddos/ddos.sh >/dev/null 2>&1" >> $CRON
-	else
-		let "START_MINUTE = $RANDOM % ($FREQ - 1)"
-		let "START_MINUTE = $START_MINUTE + 1"
-		let "END_MINUTE = 60 - $FREQ + $START_MINUTE"
-		echo "$START_MINUTE-$END_MINUTE/$FREQ * * * * root /usr/local/ddos/ddos.sh >/dev/null 2>&1" >> $CRON
-	fi
+	echo "* * * * * root /usr/local/ddos/ddos.sh >> /var/log/deflate.log >> $CRON
 	service cron restart
 }
 

@@ -14,8 +14,8 @@
 load_conf()
 {
 	CONF="/usr/local/ddos/ddos.conf"
-	if [ -f "$CONF" ] && [ ! "$CONF" ==	"" ]; then
-		source $CONF
+	if [ -f "$CONF" ] && [ ! "$CONF" =	"" ]; then
+		. $CONF
 	else
 		head
 		echo "\$CONF not found."

@@ -1,8 +1,10 @@
-debian-scripts
-==============
+DDOS Deflate for Debian 7/8
+===========================
 
-Mes scripts perso pour Debian
+https://github.com/stylersnico/DDOS-Deflate-for-Debian-7
 
-Use at your own risk !
 
-How To : Look in the sh script ;)
+DDOS Deflate for CentOs 6
+=========================
+
+https://github.com/stylersnico/DDOS-Deflate-for-CentOs-6

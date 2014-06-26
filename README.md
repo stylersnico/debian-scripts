@@ -1,12 +1,15 @@
-debian-scripts
-==============
+Debian Wheezy Scripts
+=====================
 
 Mes scripts perso pour Debian
 
 Use at your own risk !
 
-How To : Look in the sh script ;)
-=================================
+
+How To : 
+========
+
+Look in the sh script ;)
 
 
 

@@ -5,10 +5,10 @@
 #Use at your own risk !
 #Tested on Debian 7.5 AMD64
 #Get the script with : 
-#    cd /usr && wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/observium-backup.sh
-#chmod the script with :  chmod +x /usr/observium-backup.sh
+#    cd /opt && wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/observium-backup.sh
+#chmod the script with :  chmod +x /opt/observium-backup.sh
 #Use crontab to backup every day, per exemple :
-#10 00 * * * root /usr/observium-backup.sh
+#10 00 * * * root /opt/backup-observium
 #create the backup dir with : mkdir /opt/backup-observium
 
 if [ "$(id -u)" != "0" ]; then

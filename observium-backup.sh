@@ -9,7 +9,7 @@
 #chmod the script with :  chmod +x /usr/observium-backup.sh
 #Use crontab to backup every day, per exemple :
 #10 00 * * * root /usr/observium-backup.sh
-#create the backup dir with : mkdir /usr/backup-observium
+#create the backup dir with : mkdir /opt/backup-observium
 
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2
@@ -25,11 +25,11 @@ cd /opt
 # Compress Observium folder
 tar czf observium-backup.tar.gz observium
 
-# move backup to /usr/backup-observium dir
-mv observium-backup.tar.gz /usr/backup-observium
+# move backup to /opt/backup-observium dir
+mv observium-backup.tar.gz /opt/backup-observium
 
 # chmod backup folder
-chmod -R a+r /usr/backup-observium
+chmod -R a+r /opt/backup-observium
 
 #Relaunch discovery and poller scripts
 cd /opt/observium

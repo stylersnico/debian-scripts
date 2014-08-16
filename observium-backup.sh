@@ -21,7 +21,7 @@ sleep 90
 cd /opt
 
 # Compress Observium folder
-tar czfv observium-backup.tar.gz observium
+tar czvf observium-backup.tar.gz observium
 
 
 # chmod backup folder

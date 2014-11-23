@@ -1,9 +1,9 @@
 #!/bin/bash
 #By Nicolas Simond -> http://www.nicolas-simond.com/
 #The Abyss Project -> http://www.abyssproject.net/
-#Compatiblity : Debian 7.5 and April 2014 Observium
+#Compatiblity : Debian 7.7 and November 2014 Observium
 #Use at your own risk !
-#Tested on Debian 7.5 AMD64
+#Tested on Debian 7.7 AMD64
 #Get the script with : 
 #    cd /opt && wget https://raw.githubusercontent.com/stylersnico/debian-scripts/master/observium-backup.sh
 #chmod the script with :  chmod +x /opt/observium-backup.sh
